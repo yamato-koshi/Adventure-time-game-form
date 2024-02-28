@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.image_div{
+    position: relative; /* Adiciona para permitir o posicionamento absoluto da sobreposição */
+    width: 100%;
+    height: 100vh;
+    background-image: url('giphy.gif'); /* Define a imagem de fundo */
+    background-size: cover;
+    background-position: center;
+}
+.overlay{
+    position: absolute; /* Permite que a sobreposição fique sobre a imagem */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Define uma cor de sobreposição semi-transparente */
+}
+form{
+    position: absolute;
+    top: 30px;
+    left: 53%;
+    transform: translateX(-50%); /* Move a navbar para a esquerda pela metade da largura dela */
+    display: block;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+    font-family: "Kings", cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+input:focus {
+    outline: none;
+}
+input[type="text"], input[type="email"], input[type="number"]{
+    font-size: 10px;
+    height: 11px;
+    display: block;
+}
+input[type="text"]:hover, input[type="email"]:hover, input[type="number"]:hover{
+    opacity: 0.6;
+}
+select{
+    display: block;
+    font-size: 10px;
+    height: 15px;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+select:hover{
+    background-color: rgb(44, 44, 44);
+    border: 1px solid white;
+    border-radius: 4px;
+    color: whitesmoke;
+}
+select:focus{
+    outline: none;
+}
+h1{
+    color: white;
+    display: block;
+    margin-bottom: 7px;
+    text-align: center;
+    font-size: small;
+}
+.submit_button{
+    background-color: white;
+    margin-top: 5px;
+    border-radius: 4px;
+    width: 50px;
+    margin-left: 0px;
+    border: 1px solid gray;
+    font-size: 11.5px;
+    padding-right: 56px;
+    text-indent: 8.5px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.submit_button:hover{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+}
+.main_content{
+    border: 1px solid rgba(117, 117, 117, 0.3);
+    background-color: rgba(49, 47, 47, 0.2);
+    padding: 5px 10px;
+    margin-top: -19px;
+}
